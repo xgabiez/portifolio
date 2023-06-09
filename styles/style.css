@@ -29,6 +29,7 @@ body{
     font-size: 24px;
     font-weight: 600;
     color:#E52783;
+    text-decoration: none;
 
 }
 .apresentacao{
@@ -49,6 +50,18 @@ body{
     font-size: 36px;
     font-family: 'Krona One', sans-serif;
 }
+
+.apresentacao__conteudo__titulo__curriculo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+    color:#7E2CDB;
+}
+
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: #7E2CDB;
+}
+
 
 .titulo-destaque{
     color: #E52783;
