@@ -41,27 +41,36 @@ body{
     text-decoration: none;
 
 }
+.cabecalho__menu__link:hover{
+    color:var(--cor-segundaria);
+    width: auto;
+    text-shadow: var(--cor-hover) 2px 3px 2px;
+    font-size:26px;
+    
+    
+}
 .apresentacao{
     margin: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:82px;
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap:40px;  
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
 .apresentacao__conteudo__titulo__curriculo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
     color: #FFA3FD;
 }
@@ -69,6 +78,7 @@ body{
 .apresentacao__conteudo__texto a{
     text-decoration: none;
     color: var(--cor-hover);
+    
 }
 
 
@@ -80,10 +90,11 @@ body{
 .titulo-destaque:hover{
     font-size:larger;
     color:#FFA3FD;
+    
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-segundaria);
    
     
@@ -100,20 +111,19 @@ body{
 .apresentacao__links__subtitulos{
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     
 }
 
-.apresentacao__links__link{
-    /* background-color: #E52783; */
+.apresentacao__links__navegacao{
     display: flex;
     justify-content: center;
     gap:16px;
     border: 2px solid #FFA3FD;
-    width: 381px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21.5px 0;
     text-decoration: none;
     color:#F6F6F6;
@@ -121,20 +131,40 @@ body{
     font-weight: 600;
 }
 
-.apresentacao__links__link:hover{
+.apresentacao__links__navegacao:hover{
     background-color:var(--cor-hover);
     border: none;
     font-family:var(--fonte-segundaria);
-    font-size: 26px;
+    font-size: 1.62rem;
     text-shadow: var(--cor-primaria) 2px 3px 2px;
 }
 
+.apresentacao__imagem{
+    width: 50% ;
+}
 .rodape{
     padding: 24px;
     color:var(--cor-primaria);
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-segundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width:1200px){
+    .cabecalho{
+        padding:10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+  
 }
